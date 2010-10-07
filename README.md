@@ -1,7 +1,10 @@
-A Grails plugin that integrates [http://code.google.com/p/subethasmtp/](SubEtha SMTP) into your grails app, allowing you to plug in your own message handlers.
+A Grails plugin that integrates [SubEtha SMTP](http://code.google.com/p/subethasmtp/) into your grails app, allowing you to plug in your own message handlers. Participates in reloading
+events to support runtime reconfiguration and restart of the SMTP server. Provides sensible defaults. 
 
 #### Example usage
 
+    import org.apache.james.mime4j.message.Message
+    
     class MySmtpService {
         static expose = ['smtp']
 

@@ -1,0 +1,15 @@
+# /
+/cobertura.ser
+*.iws
+*.log
+.idea
+/target
+*.iml
+/out
+
+# /web-app/
+/web-app/plugins
+
+# /web-app/WEB-INF/
+/web-app/WEB-INF/grails.xml
+
